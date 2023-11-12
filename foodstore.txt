@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Colorful Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            background-color: #34495e;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 2em;
+            color: #333;
+        }
+
+        #home {
+            background-color: #ecf0f1;
+            background-image: url('https://images.immediate.co.uk/production/volatile/sites/30/2023/06/Ultraprocessed-food-58d54c3.jpg?quality=90&resize=440000,400000.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        #about {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        #products {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+
+        #contact {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Colorful Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to the Homepage</h2>
+        <p>This is the homepage content.</p>
+    </section>
+
+    <section id="about" style="display:none;">
+        <h2>About Us</h2>
+        <p><b>Welcome to HEAVEN DELIGHT,</b> where passion for delicious food meets unparalleled quality! Our journey began with a simple belief – that everyone deserves access to fresh, flavorful, and wholesome ingredients.
+        Quality First:
+We understand the importance of quality when it comes to the food you prepare for yourself and your loved ones. That's why we meticulously source our products from trusted suppliers, local farmers, and artisans who share our commitment to excellence. From farm-fresh produce to handcrafted delights, each item on our shelves reflects our dedication to providing the very best.</p>
+
+<p><b>Diverse Selection:</b>
+Explore a world of flavors at  HEAVEN DELIGHT. Our shelves are stocked with a wide variety of products, ranging from locally sourced fruits and vegetables to international gourmet ingredients. Whether you're a seasoned chef or a home cook, you'll find everything you need to elevate your culinary creations.</p>
+
+<p><b>Community Matters:</b>
+We take pride in being an integral part of the community. Heaven Delight is more than just a place to shop; it's a gathering space for food enthusiasts, a hub for culinary inspiration, and a supporter of local businesses. We believe in fostering connections and creating a sense of community around the shared love for good food. </p>
+
+<p><b>Exceptional Service:</b>
+Your satisfaction is our top priority. Our knowledgeable and friendly staff is here to assist you in finding the perfect ingredients for your recipes, offering cooking tips, and ensuring that your shopping experience is both enjoyable and efficient. We value your time and strive to make every visit to <b>HEAVEN DELIGHT </b> a pleasant one.</p>
+
+<p> Join us on a culinary journey that celebrates the art of cooking, the joy of sharing meals, and the appreciation for quality ingredients. At HEAVEN DELIGHT , we're not just providing groceries; we're delivering an experience that enriches your love for food.
+
+Thank you for choosing<b> HEAVEN DELIGHT</b>. We look forward to serving you with passion and flavor!</p>
+    </section>
+
+    <section id="products" style="display:none;">
+        <h2>Our Products</h2>
+         <section id="products">
+
+        <div class="product">
+            <img src="https://www.shutterstock.com/image-photo/dum-handi-chicken-biryani-prepared-600nw-2000023562.jpg" alt="Product 1">
+            <div>
+                <h3>Chicken fried Biriyani</h3>
+                <p>Price: 190.99</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div>
+                <h3>Haven Delight special Chicken Biriyani</h3>
+                <p>Price: 240.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div>
+                <h3>Cold Coffe</h3>
+                <p>Price: 127.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div>
+                <h3>Chicken Burger</h3>
+                <p>Price: 149.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div>
+                <h3>Plain normal Pizza</h3>
+                <p>Price: 221.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div>
+                <h3>Kitkat Milkshake</h3>
+                <p>Price: 150.99</p>
+            </div>
+        </div>
+
+        <!-- Add more products as needed -->
+
+    </section>
+        <p>This is the products page content.</p>
+    </section>
+
+    <section id="contact" style="display:none;">
+        <h2>Contact Us</h2>
+        <p>This is the contact page content.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Colorful Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle between sections
+        document.querySelector('nav a[href="#home"]').addEventListener('click', function() {
+            showSection('home');
+        });
+
+        document.querySelector('nav a[href="#about"]').addEventListener('click', function() {
+            showSection('about');
+        });
+
+        document.querySelector('nav a[href="#products"]').addEventListener('click', function() {
+            showSection('products');
+        });
+
+        document.querySelector('nav a[href="#contact"]').addEventListener('click', function() {
+            showSection('contact');
+        });
+
+        function showSection(sectionId) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('products').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
